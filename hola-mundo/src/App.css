@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  background-color: aquamarine;
+}
+h1{
+  text-align: center;
+}
+.lista{
+  list-style: none;
+  justify-content: center;
+  display: flex;
+  gap: 100px;
+  padding: 0 auto;
+}
+.div1{
+  display: flex;
+}
+.partecentral{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+aside{
+  width: 300px;
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-left: 2px solid #bdc3c7;
+}
+aside ul{
+  list-style: none;
+}
+footer {
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+}
