@@ -1,6 +1,7 @@
 function Aside(){
     return(
-        <aside className="sidebar">
+        //aside
+        <aside>
             <h3>Panel Lateral</h3>
             <ul>
                 <li>Enlace 1</li>

@@ -1,6 +1,7 @@
 function seccionPrincipal(){
     return(
-        <article className="secondary-article">
+        //primera seccion
+        <article>
             <section>
                 <h2>Propuesta para acabar la guerra entre EE.UU - Iran</h2>
                 <p>

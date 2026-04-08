@@ -1,6 +1,7 @@
 function Inicio(){
     return(
-            <header>
+        //inicio
+        <header>
             <div className='Titulos'>
                 <h1>Bienvenido</h1>
             </div>
@@ -13,7 +14,7 @@ function Inicio(){
                 </ul>
                 </nav>
             </div>
-            </header>
+        </header>
     );
 }
 export default Inicio

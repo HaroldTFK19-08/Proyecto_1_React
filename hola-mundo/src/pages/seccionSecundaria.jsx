@@ -1,5 +1,6 @@
 function SeccionSecundaria(){
     return(
+        //segunda seccion
         <article className="secondary-article">
             <section>
                 <h2>Sección Secundaria</h2>

@@ -9,7 +9,7 @@ import Footer from './pages/Footer'
 const App = () => {
   return (
     //dentro de un div esta la estructura de mi pagina web
-    <div>
+    <div>  
       <Inicio /> 
       <div className='div1'>
         <main className='partecentral'>

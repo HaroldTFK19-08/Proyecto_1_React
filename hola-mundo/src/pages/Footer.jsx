@@ -1,5 +1,6 @@
 function Footer(){
     return(
+        //footer 
         <footer>
             <p>& copy; 2026 - Tecnólogo en Análisis y Desarrollo de Software</p>
             <p>Desarrollado por: Harold Chantre - SENA</p>
