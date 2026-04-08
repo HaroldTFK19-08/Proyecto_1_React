@@ -6,8 +6,7 @@ function Aside(){
                 <li>Enlace 1</li>
                 <li>Enlace 2</li>
                 <li>Publicidad</li>
-            </ul>
-            <p>Sección de Luis</p> 
+            </ul> 
         </aside>
     );
 }

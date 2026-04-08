@@ -4,9 +4,13 @@ function SeccionSecundaria(){
             <section>
                 <h2>Sección Secundaria</h2>
                 <p>
-                    Este bloque representa la segunda sección solicitada en la guía. 
-                    Aquí se puede incluir información complementaria al contenido principal.
+                    Actualmente, el conflicto entre Estados Unidos, Israel e Irán está en plena escalada, con intensos bombardeos en Líbano y ataques directos sobre territorio iraní. La situación se describe como parte de una “guerra mundial silenciosa” que involucra alianzas estratégicas y un enfrentamiento prolongado sin un desenlace cercano.
                 </p>
+                <br />
+                <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPW0xNiINn3wCbgOg0pkv9kBSIjdBx69nJXw&s" alt="Conflicto EE.UU - Irán"/>
+                </a>
+                <br />
             </section>
         </article>
     );

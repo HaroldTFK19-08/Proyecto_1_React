@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 header{
-  background-color: aquamarine;
+  background-color: maroon;
+  color: white;
 }
 h1{
   text-align: center;
@@ -24,17 +25,30 @@ h1{
   flex: 1;
   flex-direction: column;
 }
+section{
+  background-color: beige;
+}
+section h2{
+  text-align: center;
+}
+section img{
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+}
 aside{
   width: 300px;
-  background-color: #ecf0f1;
+  background-color: rgb(127, 110, 110);
   padding: 20px;
   border-left: 2px solid #bdc3c7;
+  color: white;
 }
 aside ul{
   list-style: none;
 }
 footer {
-  background-color: #34495e;
+  background-color: maroon;
   color: white;
   text-align: center;
   padding: 10px;
