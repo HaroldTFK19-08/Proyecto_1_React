@@ -215,7 +215,7 @@ nav .lista{
 
 /* Título de la segunda sección */
 .segunda-seccion h1{
-  font-size: 70px; /* muy grande → jerarquía visual */
+  font-size: 70px; /* tamaño de la letra del titulo de la segunda seccion */
   color: #313179; /* color coherente con el diseño */
   text-align: left; /* alineado a la izquierda */
 }
@@ -224,7 +224,7 @@ nav .lista{
 .tarjetas{
   display: flex; /* pone las tarjetas en fila */
   justify-content: space-between; /* reparte espacio entre ellas */
-  gap: 10px; /* separación */
+  gap: 10px; /* separación de las tarjetas */
 }
 
 /* Tarjeta de noticia */
