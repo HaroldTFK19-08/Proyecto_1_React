@@ -4,7 +4,7 @@ function Inicio(){
         <header>
             <div className='Titulos'>
                 <div>
-                    <h1>The digital Curator</h1>
+                    <h1><strong>The Digital Curator</strong></h1>
                 </div>
                 <div className='Navegacion'>
                     <nav>
