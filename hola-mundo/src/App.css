@@ -116,7 +116,7 @@ nav .lista{
 
 /* Separación del contenido principal */
 .partecentral{
-  margin-left: 120px; /* empuja contenido para no chocar con sidebar */
+  margin-left: 100px; /* empuja contenido para no chocar con sidebar */
 }
 
 /* Contenedor principal */

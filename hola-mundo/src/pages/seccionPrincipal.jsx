@@ -2,6 +2,7 @@ function seccionPrincipal(){
     return(
         //primera seccion
         <article>
+            <br />
             <section className="Seccion-principal">
                 <div className="central">
                     <div>
