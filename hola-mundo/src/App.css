@@ -4,52 +4,117 @@
   box-sizing: border-box;
 }
 header{
-  background-color: maroon;
-  color: white;
-}
-h1{
-  text-align: center;
-}
-.lista{
-  list-style: none;
-  justify-content: center;
   display: flex;
-  gap: 100px;
-  padding: 0 auto;
+  justify-content: space-between;
+}
+header h1{
+  color: rgb(49, 49, 121);
+}
+.Titulos{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 15px;
+  gap: 50px;
+}
+.Navegacion{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+}
+.Iconos{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.Iconos i {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0px 0px 0px 4px;
+  color: rgb(49, 49, 121);
+}
+nav .lista{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  color: grey;
+  justify-content: center;
+  align-items: center;
 }
 .div1{
   display: flex;
 }
+Aside{
+  width: 400px;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+}
 .partecentral{
+  margin-left: 180px;
+}
+.central{
+  display: flex;
+  gap: 300px;
+}
+.Imagen{
+  background-image: url('https://img.rtve.es/v/17020282?w=800&preview=01776000798951.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 1000px;
+  border-radius: 20px;
+}
+.Texto{
+  font-family: 'Times New Roman', Times, serif;
+  width: 1000px;
+}
+.Titulo-seccion{
+  font-size: 70px;
+  color: rgb(49, 49, 121);
+  text-align: center;
+}
+.texto-seccion{
+  font-size: 20px;
+}
+.btn-leer {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #1d3b8b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+}
+.panel{
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
-section{
-  background-color: beige;
-}
-section h2{
+.Panel-lateral{
+  background-color: whitesmoke;
+  border-radius: 10px;
   text-align: center;
+  height: 50%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
 }
-section img{
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
-}
-aside{
-  width: 300px;
-  background-color: rgb(127, 110, 110);
-  padding: 20px;
-  border-left: 2px solid #bdc3c7;
+.Panel-secundario{
+  background-color: #2c3e94;
+  border-radius: 10px;
   color: white;
-}
-aside ul{
-  list-style: none;
-}
-footer {
-  background-color: maroon;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  width: 400px;
+  padding: 40px;
 }

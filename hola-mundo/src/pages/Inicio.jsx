@@ -3,16 +3,26 @@ function Inicio(){
         //inicio
         <header>
             <div className='Titulos'>
-                <h1>Bienvenido</h1>
+                <div>
+                    <h1>The digital Curator</h1>
+                </div>
+                <div className='Navegacion'>
+                    <nav>
+                        <ul className='lista'>
+                            <li>Inicio</li>
+                            <li>Usuarios</li>
+                            <li>Changos</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div className='Navegacion'>
-                <nav>
-                <ul className='lista'>
-                    <li>Inicio</li>
-                    <li>Usuarios</li>
-                    <li>Changos</li>
-                </ul>
-                </nav>
+            <div className='Iconos'>
+                <div>
+                    <i className="bi bi-bookmark"></i>
+                </div>
+                <div>
+                    <i class="bi bi-person-circle"></i>
+                </div>
             </div>
         </header>
     );
