@@ -1,27 +1,27 @@
 function Navigation() {
     return (
     <aside className="nav-aside">
-        <h5 className="nav-title">NAVIGATION</h5>
-        <p className="nav-subtitle">Premium Content</p>
-        <div className="nav-item active">
+        <h5 className="nav-titulo">NAVIGATION</h5>
+        <p className="nav-subtitulo">Premium Content</p>
+        <div className="nav-item">
             <i className="bi bi-lightning-fill"></i>
-            <span>Latest</span>
+            <span>Premiun</span>
         </div>
         <div className="nav-item">
             <i className="bi bi-graph-up"></i>
-            <span>Trending</span>
+            <span></span>Trading
         </div>
         <div className="nav-item">
             <i className="bi bi-star-fill"></i>
-            <span>Editor's Pick</span>
+            <span>Caficacion</span>
         </div>
         <div className="nav-item">
             <i className="bi bi-journal-text"></i>
-            <span>Special Reports</span>
+            <span>Editar</span>
         </div>
         <div className="nav-item">
             <i className="bi bi-clock"></i>
-            <span>Archives</span>
+            <span>Archivos</span>
         </div>
     </aside>
 );

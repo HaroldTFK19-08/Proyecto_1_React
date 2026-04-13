@@ -1,199 +1,264 @@
+/* Selector universal: aplica a TODOS los elementos */
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-header{
-  display: flex;
-  justify-content: space-between;
-}
-header h1{
-  color: rgb(49, 49, 121);
-}
-.Titulos{
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 15px;
-  gap: 50px;
-}
-.Navegacion{
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 15px 30px;
-}
-.Iconos{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  margin-right: 30px;
-}
-.Iconos i {
-  margin-left: 10px;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 0px 0px 0px 4px;
-  color: rgb(49, 49, 121);
-}
-nav .lista{
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  color: grey;
-  justify-content: center;
-  align-items: center;
-}
-.div1{
-  display: flex;
-}
-.nav-aside {
-  width: 400px;
-  background: #f5f6f8;
-  padding: 20px;
+  margin: 0; /* quita el margen por defecto que ponen los navegadores */
+  padding: 0; /* elimina el espacio interno por defecto */
+  box-sizing: border-box; /* hace que el ancho/alto incluyan padding y border → evita que se desborde el diseño */
 }
 
-.nav-title {
-  font-size: 12px;
-  color: #888;
-  letter-spacing: 1px;
+/* Header principal */
+header{
+  display: flex; /* convierte el contenedor en flexible → permite poner elementos en fila */
+  justify-content: space-between; /* manda uno a la izquierda y otro a la derecha (separación automática) */
 }
-.nav-subtitle {
-  font-size: 13px;
-  margin-bottom: 20px;
+
+/* Título dentro del header */
+header h1{
+  color: rgb(49, 49, 121); /* cambia el color para darle identidad visual (azul oscuro) */
 }
+
+/* Contenedor principal del header */
+.Titulos{
+  display: flex; /* permite alinear logo + menú en una sola línea */
+  justify-content: space-between; /* separa logo y navegación */
+  align-items: center; /* centra verticalmente para que no queden torcidos */
+  padding: 15px; /* agrega espacio interno para que no quede pegado */
+  gap: 50px; /* separación entre elementos internos */
+}
+
+/* Contenedor de navegación */
+.Navegacion{
+  position: relative; /* permite posicionar elementos hijos si luego usas absolute */
+  display: flex; /* organiza los items en línea */
+  align-items: center; /* centra verticalmente los links */
+  padding: 15px 30px; /* espacio interno horizontal más amplio */
+}
+
+/* Contenedor de iconos */
+.Iconos{
+  display: flex; /* pone los iconos en fila */
+  gap: 10px; /* espacio entre cada icono */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+  margin-right: 30px; /* separa los iconos del menú */
+}
+
+/* Estilo de cada icono */
+.Iconos i {
+  margin-left: 10px; /* separa cada icono del anterior */
+  font-size: 20px; /* tamaño visible */
+  cursor: pointer; /* cambia a mano → indica que es clickeable */
+  padding: 0px 0px 0px 4px; /* pequeño ajuste de espacio */
+  color: rgb(49, 49, 121); /* mantiene el mismo color del diseño */
+}
+
+/* Lista de navegación */
+nav .lista{
+  list-style: none; /* elimina los puntos de lista */
+  display: flex; /* pone los items en fila */
+  gap: 20px; /* espacio entre opciones */
+  color: grey; /* color más suave para no saturar */
+  justify-content: center; /* centra el contenido */
+  align-items: center; /* alinea verticalmente */
+}
+
+/* Contenedor auxiliar */
+.div1{
+  display: flex; /* permite organizar elementos internos en fila */
+}
+
+/* Sidebar */
+.nav-aside {
+  width: 400px; /* ancho fijo → importante para diseño lateral */
+  background: #f5f6f8; /* color claro para diferenciar */
+  padding: 20px; /* espacio interno */
+}
+
+/* Título pequeño */
+.nav-titulo {
+  font-size: 12px; /* tamaño pequeño porque es secundario */
+  color: #1d3b8b; /* color principal del diseño */
+  letter-spacing: 1px; /* separa letras para estilo moderno */
+}
+
+/* Subtítulo */
+.nav-subtitulo {
+  font-size: 13px; /* ligeramente mayor */
+  margin-bottom: 20px; /* separación hacia abajo */
+}
+
+/* Item del menú */
 .nav-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px;
-  margin: 5px 0;
-  cursor: pointer;
-  border-radius: 5px;
-  color: #333;
+  display: flex; /* permite icono + texto en línea */
+  align-items: center; /* centra verticalmente */
+  gap: 10px; /* espacio entre icono y texto */
+  padding: 10px; /* hace el área clickeable más grande */
+  margin: 5px 0; /* separa cada item */
+  cursor: pointer; /* indica interacción */
+  border-radius: 5px; /* esquinas suaves */
+  color: #333; /* color base */
 }
+
+/* Icono dentro del item */
 .nav-item i {
-  font-size: 16px;
+  font-size: 16px; /* tamaño adecuado para acompañar texto */
 }
+
+/* Hover */
 .nav-item:hover {
-  background: #e4e6eb;
+  background: #1d3b8b; /* cambia fondo al pasar el mouse */
+  color: white; /* mejora contraste */
 }
-.nav-item.active {
-  background: #e0e3f5;
-  border-left: 3px solid #1d3b8b;
-  color: #1d3b8b;
+
+/* Estado base */
+.nav-item {
+  background: whitesmoke; /* fondo claro por defecto */
 }
+
+/* Separación del contenido principal */
 .partecentral{
-  margin-left: 120px;
+  margin-left: 120px; /* empuja contenido para no chocar con sidebar */
 }
+
+/* Contenedor principal */
 .central {
-  display: flex;
-  gap: 40px;
-  align-items: stretch;
+  display: flex; /* organiza imagen + texto en fila */
+  gap: 40px; /* espacio entre ambos */
+  align-items: stretch; /* hace que ambos tengan misma altura */
 }
+
+/* Imagen */
 .Imagen {
-  width: 100%;
-  height: 400px;
+  width: 100%; /* ocupa todo el ancho disponible */
+  height: 400px; /* altura fija */
 }
+
+/* Texto */
 .Texto {
-  width: 100%;
+  width: 100%; /* se adapta al contenedor */
 }
+
+/* Imagen de fondo */
 .Imagen{
-  background-image: url('https://img.rtve.es/v/17020282?w=800&preview=01776000798951.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
+  background-image: url('https://img.rtve.es/v/17020282?w=800&preview=01776000798951.jpg'); /* usa imagen como fondo */
+  background-size: cover; /* cubre todo sin deformarse */
+  background-position: center; /* centra la imagen */
+  border-radius: 20px; /* esquinas redondeadas */
 }
+
+/* Texto principal */
 .Texto{
-  font-family: 'Times New Roman', Times, serif;
-  width: 1000px;
+  font-family: 'Times New Roman', Times, serif; /* tipografía elegante */
+  width: 1000px; /* ancho grande para contenido */
 }
+
+/* Título */
 .Titulo-seccion{
-  font-size: 70px;
-  color: rgb(49, 49, 121);
-  text-align: center;
+  font-size: 70px; /* muy grande para destacar */
+  color: rgb(49, 49, 121); /* color principal */
+  text-align: center; /* centrado */
 }
+
+/* Texto */
 .texto-seccion{
-  font-size: 20px;
+  font-size: 20px; /* tamaño legible */
 }
+
+/* Botón */
 .btn-leer {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #1d3b8b;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 30px;
+  margin-top: 20px; /* separación arriba */
+  padding: 10px 20px; /* tamaño del botón */
+  background-color: #1d3b8b; /* color principal */
+  color: white; /* contraste */
+  border: none; /* sin borde */
+  border-radius: 5px; /* bordes suaves */
+  cursor: pointer; /* clickeable */
+  font-size: 30px; /* grande para llamar atención */
 }
+/* Contenedor de paneles laterales */
 .panel {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: flex; /* organiza los paneles en columna */
+  flex-direction: column; /* los pone uno debajo del otro */
+  gap: 20px; /* separación entre paneles */
 }
+
+/* Panel lateral claro */
 .Panel-lateral{
-  background-color: whitesmoke;
-  border-radius: 10px;
-  text-align: center;
-  width: 80%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
+  background-color: whitesmoke; /* fondo suave para diferenciar */
+  border-radius: 10px; /* bordes redondeados → diseño moderno */
+  text-align: center; /* centra el texto */
+  width: 80%; /* no ocupa todo → deja espacio visual */
+  height: 50%; /* mitad del contenedor */
+  display: flex; /* permite organizar contenido interno */
+  flex-direction: column; /* elementos en columna */
+  justify-content: space-between; /* reparte contenido arriba y abajo */
+  align-items: center; /* centra horizontalmente */
+  padding: 40px; /* espacio interno amplio */
 }
+
+/* Panel oscuro */
 .Panel-secundario{
-  background-color: #2c3e94;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 80%;
-  height: 50%;
-  padding: 40px;
+  background-color: #2c3e94; /* color fuerte para destacar */
+  border-radius: 10px; /* bordes suaves */
+  color: white; /* texto blanco por contraste */
+  display: flex; /* layout flexible */
+  flex-direction: column; /* contenido vertical */
+  justify-content: space-between; /* distribuye el contenido */
+  width: 80%; /* mismo ancho que el otro panel */
+  height: 50%; /* misma altura */
+  padding: 40px; /* espacio interno */
 }
+
+/* Segunda sección */
 .segunda-seccion{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif; /* tipografía elegante */
 }
+
+/* Título de la segunda sección */
 .segunda-seccion h1{
-  font-size: 70px;
-  color: #313179;
-  text-align: left;
+  font-size: 70px; /* muy grande → jerarquía visual */
+  color: #313179; /* color coherente con el diseño */
+  text-align: left; /* alineado a la izquierda */
 }
+
+/* Contenedor de tarjetas */
 .tarjetas{
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  display: flex; /* pone las tarjetas en fila */
+  justify-content: space-between; /* reparte espacio entre ellas */
+  gap: 10px; /* separación */
 }
+
+/* Tarjeta de noticia */
 .card-noticia{
-  background-color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  border-radius: 20px;
-  width: 400px;
-  transition: 0.3s;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  background-color: whitesmoke; /* fondo claro */
+  display: flex; /* permite organizar contenido */
+  flex-direction: column; /* contenido en columna */
+  justify-content: space-between; /* separa título, texto, etc */
+  padding: 20px; /* espacio interno */
+  border-radius: 20px; /* bordes más redondeados */
+  width: 400px; /* ancho fijo */
+  transition: 0.3s; /* suaviza animaciones */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* sombra → efecto flotante */
 }
+
+/* Efecto al pasar el mouse */
 .card-noticia:hover{
-  transform: translateY(-8px);
+  transform: translateY(-8px); /* se mueve hacia arriba → efecto hover moderno */
 }
-/* IMAGEN */
+
+/* Imagen 1 de tarjeta */
 .img-card {
-  width: 99%;
-  height: 180px;
-  background-image: url('https://i.blogs.es/efc261/_32ae3b77-7eb8-49f6-b651-c46800dd91ea/650_1200.jpeg');
-  background-size: cover;
-  background-position: 50% 1px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+  width: 99%; /* casi todo el ancho */
+  height: 180px; /* altura fija */
+  background-image: url('https://i.blogs.es/efc261/_32ae3b77-7eb8-49f6-b651-c46800dd91ea/650_1200.jpeg'); /* imagen */
+  background-size: cover; /* cubre todo el espacio */
+  background-position: 50% 1px; /* ajusta posición vertical */
+  border-radius: 10px; /* esquinas suaves */
+  margin-bottom: 10px; /* separación con el texto */
 }
+
+/* Imagen 2 */
 .img-card2{
-  width: 100%;
+  width: 100%; /* ocupa todo el ancho */
   height: 180px;
   background-image: url('https://img.freepik.com/vector-gratis/mapa-mundo-digital_1017-8011.jpg');
   background-size: cover;
@@ -201,6 +266,8 @@ nav .lista{
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+/* Imagen 3 */
 .img-card3{
   width: 100%;
   height: 180px;
@@ -210,6 +277,8 @@ nav .lista{
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+/* Imagen 4 */
 .img-card4{
   width: 100%;
   height: 180px;
@@ -219,51 +288,64 @@ nav .lista{
   border-radius: 10px;
   margin-bottom: 10px;
 }
-/* TITULO */
+
+/* Título dentro de tarjeta */
 .card-noticia h3 {
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 18px; /* tamaño intermedio */
+  margin-bottom: 8px; /* espacio con el texto */
 }
 
-/* TEXTO */
+/* Texto dentro de tarjeta */
 .card-noticia p {
-  font-size: 14px;
-  color: #555;
+  font-size: 14px; /* más pequeño para contenido */
+  color: #555; /* gris para no competir con el título */
 }
+
+/* Footer */
 .footer {
-  background: #0f172a; /* oscuro elegante */
-  color: white;
-  padding: 20px 40px;
+  background: #0f172a; /* color oscuro elegante */
+  color: white; /* texto claro para contraste */
+  padding: 20px 40px; /* espacio interno */
 }
-/* CONTENEDOR */
+
+/* Contenedor del footer */
 .footer-contenido {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex; /* organiza en fila */
+  justify-content: space-between; /* separa logo, links, iconos */
+  align-items: center; /* centra verticalmente */
+  flex-wrap: wrap; /* permite bajar elementos si no caben */
 }
-/* LOGO */
+
+/* Logo */
 .footer-logo h3 {
-  margin: 0;
+  margin: 0; /* quita espacio extra */
 }
+
+/* Texto del logo */
 .footer-logo p {
-  font-size: 12px;
-  color: #ccc;
+  font-size: 12px; /* pequeño */
+  color: #ccc; /* gris claro */
 }
 
+/* Links */
 .footer-links span {
-  margin: 0 15px;
-  cursor: pointer;
-}
-.footer-links span:hover {
-  color: #1d3b8b;
+  margin: 0 15px; /* espacio entre links */
+  cursor: pointer; /* indica que se puede clicar */
 }
 
-.footer-icons i {
-  font-size: 20px;
-  margin-left: 15px;
-  cursor: pointer;
+/* Hover links */
+.footer-links span:hover {
+  color: #1d3b8b; /* cambia color al pasar el mouse */
 }
+
+/* Iconos del footer */
+.footer-icons i {
+  font-size: 20px; /* tamaño visible */
+  margin-left: 15px; /* separación */
+  cursor: pointer; /* interactivo */
+}
+
+/* Hover iconos */
 .footer-icons i:hover {
-  color: #1d3b8b;
+  color: #1d3b8b; /* cambia color */
 }
