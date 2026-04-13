@@ -48,17 +48,48 @@ nav .lista{
 .div1{
   display: flex;
 }
-Aside{
+.nav-aside {
   width: 400px;
-  justify-content: center;
-  background-color: rgb(247, 247, 247);
+  background: #f5f6f8;
+  padding: 20px;
+}
+
+.nav-title {
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 1px;
+}
+.nav-subtitle {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #333;
+}
+.nav-item i {
+  font-size: 16px;
+}
+.nav-item:hover {
+  background: #e4e6eb;
+}
+.nav-item.active {
+  background: #e0e3f5;
+  border-left: 3px solid #1d3b8b;
+  color: #1d3b8b;
 }
 .partecentral{
-  margin-left: 180px;
+  margin-left: 100px;
 }
 .central{
   display: flex;
-  gap: 300px;
+  gap: 200px;
 }
 .Imagen{
   background-image: url('https://img.rtve.es/v/17020282?w=800&preview=01776000798951.jpg');
@@ -117,4 +148,118 @@ Aside{
   height: 50%;
   width: 400px;
   padding: 40px;
+}
+.segunda-seccion{
+  font-family: 'Times New Roman', Times, serif;
+}
+.segunda-seccion h1{
+  font-size: 70px;
+  color: #313179;
+  text-align: left;
+}
+.tarjetas{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.card-noticia{
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 20px;
+  width: 400px;
+  transition: 0.3s;
+  translate: calc(-10y);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.card-noticia:hover{
+  transform: translateY(-8px);
+}
+/* IMAGEN */
+.img-card {
+  width: 99%;
+  height: 180px;
+  background-image: url('https://i.blogs.es/efc261/_32ae3b77-7eb8-49f6-b651-c46800dd91ea/650_1200.jpeg');
+  background-size: cover;
+  background-position: 50% 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.img-card2{
+  width: 100%;
+  height: 180px;
+  background-image: url('https://img.freepik.com/vector-gratis/mapa-mundo-digital_1017-8011.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.img-card3{
+  width: 100%;
+  height: 180px;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7a0W4X9lWbz73k2E0kIw2G_6GRYBKXPQpDg&s');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.img-card4{
+  width: 100%;
+  height: 180px;
+  background-image: url('https://www.revistaejercitos.com/wp-content/uploads/2025/10/La-Inteligencia-Artificial-y-la-guerra-hasta-el-ano-2045.webp');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+/* TITULO */
+.card-noticia h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+/* TEXTO */
+.card-noticia p {
+  font-size: 14px;
+  color: #555;
+}
+.footer {
+  background: #0f172a; /* oscuro elegante */
+  color: white;
+  padding: 20px 40px;
+  margin-top: 40px;
+}
+/* CONTENEDOR */
+.footer-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* LOGO */
+.footer-logo h3 {
+  margin: 0;
+}
+.footer-logo p {
+  font-size: 12px;
+  color: #ccc;
+}
+/* LINKS */
+.footer-links span {
+  margin: 0 15px;
+  cursor: pointer;
+}
+.footer-links span:hover {
+  color: #1d3b8b;
+}
+/* ICONOS */
+.footer-icons i {
+  font-size: 20px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.footer-icons i:hover {
+  color: #1d3b8b;
 }

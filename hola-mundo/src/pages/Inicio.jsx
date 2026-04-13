@@ -11,7 +11,7 @@ function Inicio(){
                         <ul className='lista'>
                             <li>Inicio</li>
                             <li>Usuarios</li>
-                            <li>Changos</li>
+                            <li>Secciones</li>
                         </ul>
                     </nav>
                 </div>

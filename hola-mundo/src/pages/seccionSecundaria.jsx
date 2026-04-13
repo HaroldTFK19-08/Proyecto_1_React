@@ -1,20 +1,50 @@
-function SeccionSecundaria(){
-    return(
-        //segunda seccion
-        <article className="secondary-article">
-            <br />
-            <section>
-                <h2>Sección Secundario</h2>
-                <p>
-                    Actualmente, el conflicto entre Estados Unidos, Israel e Irán está en plena escalada, con intensos bombardeos en Líbano y ataques directos sobre territorio iraní. La situación se describe como parte de una “guerra mundial silenciosa” que involucra alianzas estratégicas y un enfrentamiento prolongado sin un desenlace cercano.
-                </p>
-                <br />
-                <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPW0xNiINn3wCbgOg0pkv9kBSIjdBx69nJXw&s" alt="Conflicto EE.UU - Irán"/>
-                </a>
-                <br />
-            </section>
-        </article>
+function SegundaSeccion() {
+    return (
+        <section className="segunda-seccion">
+            <h1><strong>Seccion segundaria</strong></h1>
+            {/* CARD 1 */}
+            <div className="tarjetas">
+                <div className="card-noticia">
+                    <div className="img-card"></div>
+                        <h3>
+                        Cómo los nuevos procesadores están redefiniendo lo que creíamos posible en el procesamiento
+                        </h3>
+                        <p>
+                        Cómo los nuevos procesadores están redefiniendo lo que creíamos posible en el procesamiento de datos...
+                        </p>
+                    </div>
+                {/* CARD 2 */}
+                <div className="card-noticia">
+                    <div className="img-card2"></div>
+                        <h3>
+                        La inteligencia artificial acelera la innovación en múltiples industrias
+                        </h3>
+                        <p>
+                        Nuevas herramientas impulsadas por IA están cambiando la forma en que las empresas operan...
+                        </p>
+                </div>
+                {/* CARD 3 */}
+                <div className="card-noticia">
+                    <div className="img-card3"></div>
+                    <h3>
+                    Energías renovables y su impacto en el futuro global
+                    </h3>
+                    <p>
+                    La transición hacia fuentes limpias está marcando un cambio clave en la economía mundial...
+                    </p>
+                </div>
+                <div className="card-noticia">
+                    <div className="img-card4"></div>
+                    <h3>
+                    Inteligencia artificial en futuras guerras
+                    </h3>
+                    <p>
+                    El uso de la inteligencia artificial en la guerra está transformando profundamente ...
+                    </p>
+                </div>
+            </div>
+        </section>
     );
 }
-export default SeccionSecundaria;
+
+export default SegundaSeccion;
