@@ -3,7 +3,6 @@ function seccionPrincipal(){
         //primera seccion
         <article>
             <section className="Seccion-principal">
-                <br />
                 <div className="central">
                     <div>
                         <div className="Imagen"></div>

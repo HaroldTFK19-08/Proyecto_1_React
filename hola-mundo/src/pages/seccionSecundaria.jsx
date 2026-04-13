@@ -43,6 +43,7 @@ function SegundaSeccion() {
                     </p>
                 </div>
             </div>
+            <br />
         </section>
     );
 }
