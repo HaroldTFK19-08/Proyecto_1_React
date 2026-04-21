@@ -1,10 +1,10 @@
-function Inicio(){
+const Inicio=()=>{
     return(
         //inicio
         <header>
             <div className='Titulos'>
                 <div>
-                    <h1><strong>The Digital Curator</strong></h1>
+                    <h1><strong>The Digital News</strong></h1>
                 </div>
                 <div className='Navegacion'>
                     <nav>

@@ -1,4 +1,4 @@
-function seccionPrincipal(){
+const seccionPrincipal=()=>{
     return(
         //primera seccion
         <article>

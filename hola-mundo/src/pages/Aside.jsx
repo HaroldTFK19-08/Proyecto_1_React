@@ -1,4 +1,4 @@
-function Navigation() {
+const Navigation=()=> {
     return (
     <aside className="nav-aside">
         <h5 className="nav-titulo">NAVIGATION</h5>
@@ -13,7 +13,7 @@ function Navigation() {
         </div>
         <div className="nav-item">
             <i className="bi bi-star-fill"></i>
-            <span>Caficacion</span>
+            <span>Calificacion</span>
         </div>
         <div className="nav-item">
             <i className="bi bi-journal-text"></i>

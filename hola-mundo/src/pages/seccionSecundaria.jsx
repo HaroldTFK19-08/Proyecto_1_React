@@ -1,4 +1,4 @@
-function SegundaSeccion() {
+const SegundaSeccion=()=>{
     return (
         <section className="segunda-seccion">
             <h1><strong>Seccion segundaria</strong></h1>
