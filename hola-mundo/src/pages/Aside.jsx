@@ -9,7 +9,7 @@ const Navigation=()=> {
         </div>
         <div className="nav-item">
             <i className="bi bi-graph-up"></i>
-            <span></span>Trading
+            <span>Trading</span>
         </div>
         <div className="nav-item">
             <i className="bi bi-star-fill"></i>
