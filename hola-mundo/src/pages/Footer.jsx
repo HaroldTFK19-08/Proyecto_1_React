@@ -9,7 +9,7 @@ const Footer=()=> {
                 <div className="footer-links">
                 <span>Privacidad</span>
                 <span>Terminos</span>
-                <span>Support</span>
+                <span>Soporte tecnico</span>
                 </div>
                 <div className="footer-icons">
                 <i className="bi bi-facebook"></i>
